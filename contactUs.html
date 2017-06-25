@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Us</title>
+    </head>
+    <body>
+        <form action="#" method="post">
+            <div>
+                <label id="FirstNameLabel" for="FirstName">First Name:  </label>
+                <input id="FirstName" name="FirstName" type="text"/>
+            </div>
+            <div>
+                <label id="LastNameLabel" for="LastName">Last Name:  </label>
+                <input id="LastName" name="LastName" type="text"/>
+            </div>
+            <div>
+                <label id="EmailLabel" for="Email">Email Address:  </label>
+                <input id="Email" name="Email" type="text"/>
+            </div>
+            <div>
+                Type of License: <input type="radio" name="LicenseType" value="Business"/>Business
+                <input type="radio" name="LicenseType" value="Personal"/>Personal
+            </div>
+            <div>
+                Reason:<select name="Reason">
+                    <option value="Reason1">Options</option>
+                    <option value="Reason2">Software Support</option>
+                    <option value="Reason3">Hardware Support</option>
+                    <option value="Reason4">Information Support</option>
+                </select>
+            </div>
+            <div>
+                Additional Information:</br>  <textarea name="briefDescription"></textarea>
+            </div>
+            <div>
+                <input type="checkbox" name="ReadTerms" value="ReadTerms"/>I have read the terms of the service.<br/>
+            </div>
+            <div>
+                <input type="submit" value="Send Request"/>
+            </div>
+        </form>
+    </body>
+</html>
