@@ -2,31 +2,72 @@
 <html>
     <head>
         <title>Contact Us</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="restaurantStyles.css" rel="stylesheet" type="text/css">
+        <style>
+            form {
+                text-align: center;
+            }
+        </style>
     </head>
+    <header>
+        <center><h1>Gina's Flying Sandwich Shop</h1></center><br/>
+        <hr>
+    </header>
+    <nav>
+        <a href="reshome.html">Home</a>
+        <a href="resmenu.html">Menu</a>
+        <a href="rescontactus.html">Contact Us</a>
+    </nav>
+    <hr>
     <body>
         <div>
-            <center><h1>Gina's Flying Sandwich Shop</h1></center><br/>
-            <hr>
-            <a href="reshome.html">Home</a>
-            <a href="resmenu.html">Menu</a>
-            <a href="rescontactus.html">Contact Us</a>
-        </div>
-        <hr>
-        <div>
-            <center>
-
-            </center>
-        </div>
-        <hr>
-        <div>
-            <center>
-                <p>
-                Victory Airway 59, Sky High City, State of Mind, 65741<br/>
-                <br/>
-                555-867-5309
-                </p>
-            </center>
+            <form action="#" method="post">
+            <div>
+                <label id="NameLabel" for="Name">Name:  </label>
+                <input id="Name" name="Name" type="text"/>
+            </div>
+            <div>
+                <label id="EmailLabel" for="Email">Email:  </label>
+                <input id="Email" name="Email" type="text"/>
+            </div>
+            <div>
+                <label id="PhoneLabel" for="Phone">Phone:  </label>
+                <input id="Phone" name="Phone" type="text"/>
+            </div>
+            <div>
+                Reason for Inquiry:<select name="Reason">
+                    <option value="Reason1">Catering</option>
+                    <option value="Reason2">Private Party</option>
+                    <option value="Reason3">Feedback</option>
+                    <option value="Reason4">Other</option>
+                </select>
+            </div>
+            <div>
+                Additional Information:<textarea name="briefDescription"></textarea>
+            </div>
+            <div>
+                Have you been to the restaurant?: <input type="radio" name="ResponseType" value="No" checked/>No
+                <input type="radio" name="ResponseType" value="Yes"/>Yes
+            </div>
+            <div>
+                Best days to contact you:  <input type="checkbox" name="BestDay" value="M"/>M
+                <input type="checkbox" name="BestDay" value="M"/>T
+                <input type="checkbox" name="BestDay" value="M"/>W
+                <input type="checkbox" name="BestDay" value="M"/>Th
+                <input type="checkbox" name="BestDay" value="M"/>F
+            </div>
+            <div>
+                <input type="submit" value="Send Request"/>
+            </div>
+            </form>
         </div>
         <hr>
     </body>
+    <footer>
+        Victory Airway 59, Sky High City, State of Mind, 65741<br/>
+        <br/>
+        555-867-5309
+        <hr>
+    </footer>
 </html>
