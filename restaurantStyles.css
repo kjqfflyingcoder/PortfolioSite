@@ -10,3 +10,19 @@ footer {
 div{
     background-color: lightblue;
 }
+a {
+    color: green;
+    text-decoration: underline;
+}
+a:link {
+    color: black;
+}
+a:visited {
+    color: red;
+}
+a:hover {
+    font-weight: bold;
+}
+a:active {
+    text-decoration: none;
+}
