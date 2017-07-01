@@ -2,8 +2,11 @@ table {
     border-collapse: collapse;
     width: 60%;
     margin: auto;
+    background-color: lightblue;
 }
-
+td {
+    font-style: italic;
+}
 table, th, td {
     border: 1px solid black;
     text-align: center;
