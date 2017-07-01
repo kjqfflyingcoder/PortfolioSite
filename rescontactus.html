@@ -11,6 +11,9 @@
             input[type=submit] {
                 background-color: gray;
             }
+            div{
+                font-weight: bold;
+            }
         </style>
     </head>
     <header>
@@ -38,7 +41,7 @@
                 <label id="PhoneLabel" for="Phone">Phone:  </label>
                 <input id="Phone" name="Phone" type="text"/>
             </div>
-            <div>
+            <div style="text-align: center; width: 91%;">
                 Reason for Inquiry:<select name="Reason">
                     <option value="Reason1">Catering</option>
                     <option value="Reason2">Private Party</option>
@@ -46,14 +49,14 @@
                     <option value="Reason4">Other</option>
                 </select>
             </div>
-            <div>
+            <div style="text-align: center; width: 93%;">
                 Additional Information:<textarea name="briefDescription"></textarea>
             </div>
-            <div>
+            <div style="text-align: center; width: 83%;">
                 Have you been to the restaurant?: <input type="radio" name="ResponseType" value="No" checked/>No
                 <input type="radio" name="ResponseType" value="Yes"/>Yes
             </div>
-            <div>
+            <div style="text-align: center; width: 94%;">
                 Best days to contact you:  <input type="checkbox" name="BestDay" value="M"/>M
                 <input type="checkbox" name="BestDay" value="M"/>T
                 <input type="checkbox" name="BestDay" value="M"/>W
