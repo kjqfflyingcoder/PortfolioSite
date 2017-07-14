@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Title Page</title>
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="albumStyle.css" rel="stylesheet" type="text/css">
         <!-- Latest compiled and minified CSS -->
@@ -15,12 +16,12 @@
                 color:red;
                 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
                 }
-            #image1 {
+            /* #image1 {
                 background-image: url("images/Moving_Pictures.jpg");
                 background-size: width: 300px; height: 300px;
                 background-position: center center;
                 background-repeat: no-repeat;
-            }
+            } */
             ul {
                 margin-left: 20%
             }
@@ -34,32 +35,29 @@
         </style>
     </head>
 <body>
-    <div id="image1">
+    <div id="image1" class="container text-center">
+        <img src="images/Moving_Pictures.jpg" class="img-circle" alt="Moving Pictures" width="450" height="450">
     </div>
-    <div>
-        <center>
+    <div class="container text-center">
         <h1>Moving Pictures</h1>
         <h2><a href="https://www.rush.com" target="_blank">Rush</a></h2>
         <h3>Release Date: Feb 12, 1981</h3>
-        </center>
     </div>
     <hr>
-    <div>
-        <div>
-        <center><h1>Band Members and Producers</h1></center>
-        <p>
-            <ul style="font-style:italic; font-weight:bold;">
-                <li>Member One - Geddy Lee (base guitar, lead vocals, keyboards)</li>
-                <li>Member Two - Alex Lifeson (guitars, backing vocals)</li>
-                <li>Member Three - Neil Peart (drums, percussion, lyrics)</li>
-                <li>Producer - Rush, Terry Brown</li>
+    <div class="container">
+        <div class="container text-center">
+        <h1>Band Members and Producers</h1>
+            <ul class="list-group text-left" style="font-style:italic; font-weight:bold;">
+                <li class="list-group-tem">Member One - Geddy Lee (base guitar, lead vocals, keyboards)</li>
+                <li class="list-group-tem">Member Two - Alex Lifeson (guitars, backing vocals)</li>
+                <li class="list-group-tem">Member Three - Neil Peart (drums, percussion, lyrics)</li>
+                <li class="list-group-tem">Producer - Rush, Terry Brown</li>
             </ul>
-        </p>
         </div>
-        <div>
-            <table>
+        <div class="container-fluid text-center">
+            <table class="table table-bordered table-striped">
                 <caption><strong>Tracks</strong></caption>
-                    <tr bgcolor="grey">
+                    <tr>
                         <th>Track #</th>
                         <th>Track Title</th>
                         <th>Track Length</th>
