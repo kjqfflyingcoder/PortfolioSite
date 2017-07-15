@@ -4,6 +4,9 @@
         <title>Menu</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <script src="js/bootstrap.min.js"></script>
         <link href="restaurantStyles.css" rel="stylesheet" type="text/css">
         <style>
             table {
@@ -24,22 +27,23 @@
             }
             #Bevs td, caption {
                 text-align: left;
-                padding: 5px 0px 5px 0px;
+                padding: 10px 0px 10px 0px;
             }
         </style>
     </head>
-    <header>
+    <body>
+    <div class="container">
+        <header>
         <center><h1>Gina's Flying Sandwich Shop</h1></center><br/>
         <hr>
-    </header>
-    <nav>
-        <a href="reshome.html">Home</a>
-        <a href="resmenu.html">Menu</a>
-        <a href="rescontactus.html">Contact Us</a>
-    </nav>
-    <hr>
-    <body>
-        <div>
+        </header>
+        <ul class="nav nav-tabs">
+            <li><a href="reshome.html"><span class="glyphicon glyphicon-home">Home</span></a></li>
+            <li class="active"><a href="resmenu.html">Menu</a></li>
+            <li><a href="rescontactus.html">Contact Us</a></li>
+        </ul>
+        <br>
+        <!-- <div>
                 <table id="Entrees">
                     <tr>
                         <td><strong><span style="font-size: larger;">Flying Burger and Fries</span></strong></br>
@@ -103,8 +107,77 @@
                     </tr>    
                 </table>
                 <hr>
-                <div>
-                <table id="Bevs">
+        </div> -->
+                <div class="container-fluid text-center">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <strong><span style="font-size: larger;">Flying Burger and Fries</span></strong></br>
+                            </br>
+                            An American Classic!</br>
+                            Your choice - with or without cheese</br>
+                            Pickle, onion, tomato, and lettuce</br>
+                            Served with our famous thick cut</br>
+                            french fries</br>
+                            $7.95</br>
+                            </br>
+                        </div>
+                        <div class="col-sm-4">
+                            <strong><span style="font-size: larger;">Flying Dog and Chips</span></strong></br>
+                            </br>
+                            An American Classic!</br>
+                            Your choice - with white or wheat bun</br>
+                            Relish, mustard, and ketchup</br>
+                            Served with our famous house-made chips</br>
+                            $7.95</br>
+                            </br>
+                        </div>
+                        <div class="col-sm-4">
+                            <strong><span style="font-size: larger;">Flying Italian Sausage and Peppers</span></strong></br>
+                            </br>
+                            An All-Time Favorite!!</br>
+                            Your choice - mild or spicy</br>
+                            Cold Slaw</br>
+                            Served with garlic mashers</br>
+                            $10.95</br>
+                            </br>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <strong><span style="font-size: larger;">Flying Burger and Fries</span></strong></br>
+                            </br>
+                            An American Classic!</br>
+                            Your choice - with or without cheese</br>
+                            Pickle, onion, tomato, and lettuce</br>
+                            Served with our famous thick cut</br>
+                            french fries</br>
+                            $7.95</br>
+                            </br>
+                        </div>
+                        <div class="col-sm-4">
+                            <strong><span style="font-size: larger;">Flying Dog and Chips</span></strong></br>
+                            </br>
+                            An American Classic!</br>
+                            Your choice - with white or wheat bun</br>
+                            Relish, mustard, and ketchup</br>
+                            Served with our famous house-made chips</br>
+                            $7.95</br>
+                            </br>
+                        </div>
+                        <div class="col-sm-4">
+                            <strong><span style="font-size: larger;">Flying Italian Sausage and Peppers</span></strong></br>
+                            </br>
+                            An All-Time Favorite!!</br>
+                            Your choice - mild or spicy</br>
+                            Cold Slaw</br>
+                            Served with garlic mashers</br>
+                            $10.95</br>
+                            </br>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                <table id="Bevs" class="table">
                     <caption><strong><span style="text-decoration: underline; font-size: larger;">Beverages</span></strong></caption>
                     <tr>
                         <td>Root Beer</td>
@@ -126,11 +199,12 @@
                 </div>
         </div>
         <hr>
-        </body>
         <footer>
             Victory Airway 59, Sky High City, State of Mind, 65741<br/>
             <br/>
             555-867-5309
             <hr>
         </footer>
+        </div>
+        </body>
 </html>
