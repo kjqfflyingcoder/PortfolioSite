@@ -2,35 +2,55 @@
 <html>
     <head>
         <title>Home Page</title>
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <script src="js/bootstrap.min.js"></script>
         <link href="restaurantStyles.css" rel="stylesheet" type="text/css">
+        <style>
+        #comingsoon {
+            padding: 1px 1px 1px 1px
+        }
+        </style>
     </head>
-    <header>
+    <body>
+        <div class="container">
+        <header>
         <center><h1>Gina's Flying Sandwich Shop</h1></center><br/>
         <hr>
-    </header>
-    <nav>
-        <a href="reshome.html">Home</a>
-        <a href="resmenu.html">Menu</a>
-        <a href="rescontactus.html">Contact Us</a>
-    </nav>
-    <hr>
-    <body>
-        <div>
-            <h1 style="text-align: center"><img src="images/checkridesuccess.png" style="width: 450px;"/><a/><br/></h1>
-            <center>
-                <p style="width: 30%; text-align: left; color: black;">
+        </header>
+        <!-- <nav>
+            <a href="reshome.html">Home</a>
+            <a href="resmenu.html">Menu</a>
+            <a href="rescontactus.html">Contact Us</a>
+         </nav>
+        <hr> -->
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="reshome.html"><span class="glyphicon glyphicon-home">Home</span></a></li>
+            <li><a href="resmenu.html">Menu</a></li>
+            <li><a href="rescontactus.html">Contact Us</a></li>
+        </ul>
+        <br>
+        <div id="comingsoon" class="jumbotron text-center">
+            <h3>New location coming to Cuyahoga Falls, OH August 2017!!!</h3>
+        </div>
+        <hr>
+        <div id="main" class="jumbotron text-center">
+            <h1><img src="images/checkridesuccess.png" style="width: 50%;"/></h1><br/>
+            <div class="container text-justify" style="width: 50%;">
+                <p style="color: black;">
                     Welcome to Gina's Flying Sandwich Shop!</br>
                     Founded in June 2016, my little shop takes the ordinary dining experience and makes it extraordinary!
                 </p>
-            </center>
+            </div>
         </div>
         <hr>
-    </body>
     <footer>
         Victory Airway 59, Sky High City, State of Mind, 65741<br/>
         <br/>
         555-867-5309
         <hr>
     </footer>
+    </body>
 </html>
