@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+    <title>Sample Audition Problem</title>
+    <script type="text/JavaScript" src="sampleAuditionProblem.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="container text-center">
+        <header>
+            <h1>Sample Audition Problem</h1>
+        </header>
+        <form class="form-horizontal" name="getEvens" onsubmit="return validateItems();">
+            <div class="form-group">
+                <label class="control-label col-sm-6" for="startNum">Starting Number:</label>
+                <div class="col-sm-6">
+                    <input type="number" class="form-control" id="startNum">
+                </div>
+            </div>    
+            <div class="form-group">
+                <label class="control-label col-sm-6" for="endNum">Ending Number:</label>
+                <div class="col-sm-6">
+                    <input type="number" class="form-control" id="endNum">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-6" for="stepNum">Step:</label>
+                <div class="col-sm-6">
+                    <input type="number" class="form-control" id="stepNum">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-1 col-sm-11">
+                    <button type="submit" class="btn btn-default">Display Evens</button>
+                </div>
+        </form>
+        <div>
+            <p>Here are the even numbers between<span id="start"></span></p>
+            <p>and<span id="end"></span></p>
+            <p>by<span id="step"></span>:</p>
+            <p>Results:<span id="results"></span></p>
+            <p>Array length:<span id="evenElements"></span></p>
+            <p>Loop counter:<span id="loopCounter"></span></p>
+        </div> 
+    </div>
+</body>
+</html>
