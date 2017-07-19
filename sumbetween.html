@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+    <head>
+    <title>Sum Between</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        rel="stylesheet" type="text/css" />
+        <script src="js/jquery-3.2.1.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script type="text/JavaScript" src="sumbetween.js"></script>
+</head>
+<body>
+    <header style="margin-left: 10%;"><h1>Sum Between</h1></header>
+    <div class="container">
+        Starting number:<input type="text" class="form-control" id="startNum">
+        Ending number:<input type="text" class="form-control" id="endNum">
+        <button class="btn btn-default" onclick="myFunction()">Sum Between</button>
+    </div>
+    <div style="margin-left: 10%;">
+        <p>There are <span id="range"> numbers </span>:</p>
+        <p>between<span id="start"></span></p>
+        <p>and<span id="end"> inclusive.  The sum of</span></p>
+        <p>them is <span id="results"></span></p>
+    </div> 
+</body>
+</html>

@@ -49,7 +49,7 @@ function validateItems() {
         document.forms["getEvens"]["stepNum"].focus();
         return false;
     }
-       if (endNum >= startNum) {
+       if (endNum <= startNum) {
         alert("endNum must be greater than startNum.");
         document.forms["getEvens"]["endNum"]
            .parentElement.className = "form-group has-error";
